@@ -32,7 +32,7 @@
 }
 .home-content {
     display: flex;
-    border: 1px solid;
+    /* border: 1px solid; */
     height: 125vh;
     width: 100vw;
     align-items: center;
