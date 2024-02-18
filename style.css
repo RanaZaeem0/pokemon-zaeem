@@ -36,7 +36,8 @@
     height: 125vh;
     width: 100vw;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 47px;
 }
 
 .home-content .box-1 {
@@ -63,7 +64,7 @@
 /*  */
 .box-1-item-1 {
     height: 69vh;
-    width: 55vw;
+    width: 45vw;
     border-radius: 10px;
     position: relative;
     background-color: rgb(50 141 219);
@@ -92,7 +93,7 @@
 
     height: 100vh;
     display: flex;
-    width: 27vw;
+    width: 21vw;
     position: relative;
     gap: 12px;
     flex-direction: column;
@@ -152,4 +153,29 @@
 #box-2-item-2{
 display: flex;
 background-color: rgb(250, 76, 76);
+}
+/*                              home cousel  */
+.home-carousal{
+    height: 40vh;
+    width: 100vw;
+}
+
+.slider{
+    margin-bottom: 20px;
+    position: relative;
+}
+.slider .owl-item.active.center .slider-card{
+    transform: scale(1.55);
+    opacity: 1;
+    background: #74ebd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+}
+
+.slider-card{
+    background-color: #fff;
+    margin: 10px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px white;
 }
