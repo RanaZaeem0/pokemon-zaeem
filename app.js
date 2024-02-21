@@ -20,19 +20,24 @@ $(document).ready(function(){
         loop:true,
         margin:10,
     responsiveClass:true,
+    center:true,
+    nav:true,
+    NavText:[
+        "",
+    ],
     responsive:{
         0:{
             items:1,
-            nav:true
+  
         },
         600:{
-            items:3,
-            nav:false
+            items:2,
+       
         },
         1000:{
-            items:5,
+            items:4,
             nav:true,
-            loop:false
+         
         }
     }
 })
