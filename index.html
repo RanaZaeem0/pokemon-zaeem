@@ -22,7 +22,7 @@
 
 <body>
    <header> 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid" style="background-color: rgb(218, 228, 236); box-shadow: 0px 0px 10px -6px;">
         <div class=""></div>
 
@@ -61,7 +61,7 @@
 
         </div>
       </div>
-    </nav>
+    </nav>  -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -71,33 +71,54 @@
      
 
         <div class="collapse navbar-collapse"
-        style="padding-left: 15%;" id="navbarSupportedContent">
+         id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           
-            <li class="nav-item">
+            <li class="nav-item" id="nav-2-item" id="nav-2-item"
+             style="border-bottom: 5px solid red
+             ;
+             " onmouseover="this.style.backgroundColor='red'"
+               onmouseout="this.style.backgroundColor=''"
+             >
               <span><img src="./img/favicon.ico" alt=""></span>
-              <a class="nav-link" href="#">Pokedex</a>
+              <a class="nav-link" href="#">Pokémon</a>
             </li>
       
-            <li class="nav-item ">
+            <li class="nav-item"
+            id="nav-2-item"
+            onmouseover="this.style.backgroundColor='#fe5c5c'"
+               onmouseout="this.style.backgroundColor=''"
+               style="border-bottom: 5px solid #fe5c5c;">
                 <span  ><i class="fa-solid fa-gamepad"></i></span>
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="#" style="">
                 
                 Video Games & Apps</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-2-item"
+            onmouseover="this.style.backgroundColor='orange'"
+               onmouseout="this.style.backgroundColor=''"
+               style="border-bottom: 5px solid orange;">
               <span><i class="fa-solid fa-heart"></i></span>
               <a class="nav-link" href="#">Trading Card Games</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-2-item"
+            onmouseover="this.style.backgroundColor='#53c453'"
+               onmouseout="this.style.backgroundColor=''"
+               style="border-bottom: 5px solid #53c453;">
               <span><i class="fa-solid fa-circle-play"></i></span>
               <a class="nav-link" href="#">Animation</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-2-item"
+            onmouseover="this.style.backgroundColor='#60c3e2'"
+               onmouseout="this.style.backgroundColor=''"
+               style="border-bottom: 5px solid #60c3e2;">
               <span><i class="fa-solid fa-trophy"></i></span>
               <a class="nav-link" href="#">Play! Pokemon Events</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-2-item"
+            onmouseover="this.style.backgroundColor='#3476de'"
+               onmouseout="this.style.backgroundColor=''"
+               style="border-bottom: 5px solid #3476de;">
               <span><i class="fa-regular fa-newspaper"></i></span>
               <a class="nav-link" href="#">News</a>
             </li>
@@ -110,10 +131,10 @@
     </nav>
   </header>  
   <div class="home-content">
-
+  
     <div class="box-1">
       <div class="box-1-item-1 ">
-        <img src="./img/1home.png" alt="">
+        <img src="./img/pokemon-presents-169-us.png" alt="">
         <div class="text-content" style="position: relative;">
           <h3>
             Catch Legendary Pokémon and Paradox Pokémon in The Indigo Disk
@@ -365,7 +386,7 @@
       </div>
       <div class="footer-part2" style="">
         <div class="">
-          <h4>The pokemon Company</h4>
+          <h4 style="color: black;">The Pokémon Company</h4>
           <br>
           <h5>News</h5>
           <h5>Parents Guide</h5>
@@ -377,7 +398,7 @@
           <h5>Press Site</h5>
         </div>
        
-        <div class="">
+        <div class="" style="cursor: pointer;">
           <img src="./img/social-icons.png" alt="">
         </div>
         <div class="" style="padding: 10px; margin: 20px;">
