@@ -19,6 +19,7 @@
 .last-container img{
 
 }
+
 .text-content {
     position: relative;
     padding: 1px;
@@ -47,6 +48,7 @@
     /* border: 1px solid; */
     height: 189vh;
     width: 100vw;
+    background: url(./img/container_bg.png)no-repeat center center/cover;
     align-items: center;
     justify-content: center;
     gap: 2px;
@@ -98,11 +100,18 @@
     flex-direction: row;
 }
 
-.box-1-item-2-content {
+.box-1-item-2-content-1 {
     color: white;
     height: 119%;
     width: 48%;
     background-color: rgb(48, 133, 212);
+    border-radius: 10px;
+}
+.box-1-item-2-content-2 {
+    color: white;
+    height: 119%;
+    width: 48%;
+    background-color: rgb(41, 43, 45);
     border-radius: 10px;
 }
 
@@ -175,7 +184,13 @@
 
 #box-2-item-2 {
     display: flex;
+    width: 100%;
+    height: 100%;
     background-color: rgb(250, 76, 76);
+}
+#box-2-item-2 img{
+    width: 100%;
+    height: 100%;
 }
 
 /*                              home cousel  */
@@ -183,6 +198,9 @@
     height: 60vh;
     width: 100vw;
     position: relative;
+}
+.owl-carousel.owl-loaded{
+    height: 72vh;
 }
 
 .slider {
@@ -278,8 +296,9 @@
     height: 160vh;
     width: 100vw;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
+    background: url(./img/container_bg.png)no-repeat center center/cover;
 
 }
 
@@ -292,10 +311,13 @@
 
 .last-content-box1 {
     height: 100vh;
-    width: 32vw;   
+    width: 32%;   
     gap: 18px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .box1-item {
@@ -314,6 +336,8 @@
     width: 32vw;
     display: flex;
     gap: 20px;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     position: relative;
     bottom: 40px;
@@ -335,6 +359,8 @@ border-radius: 10px;
     width: 32vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 .box3-item{
