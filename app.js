@@ -42,27 +42,22 @@ $(document).ready(function(){
     }
 })
 })
+//                        navbar fixer
+let navConatiner = document.querySelector("#fixed-nav")
 
-let navConatiner = document.getElementsByClassName("container-fluid")
-let lastScrollTop =
-  window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener('scroll' , function(){
+  const scrollHeight =window.pageYOffset;
+  const navHeight = navConatiner.getBoundingClientRect().height;
+  console.log(navHeight);
+if(scrollHeight>navHeight){
+  navConatiner.classList.add("fixed-nav");
+}
+else{
+  navConatiner.classList.remove("fixed-nav")
+}
+if(scrollHeight>500){
 
-window.addEventListener(
-  'scroll',
-  function handleScroll() {
-    const scrollTopPosition =
-      window.pageYOffset || document.documentElement.scrollTop;
+}
 
-    if (scrollTopPosition > lastScrollTop) {
-      console.log('scrolling down');
 
-     }
-     else if (scrollTopPosition < lastScrollTop) {
-      console.log('scrolling up');
-    }
-    lastScrollTop =
-      scrollTopPosition <= 0 ? 0 : scrollTopPosition;
-  },
-  false,
-  
-);
+})
